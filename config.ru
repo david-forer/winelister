@@ -7,6 +7,6 @@ end
 use Rack::MethodOverride
 
 use UsersController
-use WinelistsController
-use WinereviewsController
+# use WinelistsController
+# use WinereviewsController
 run ApplicationController
