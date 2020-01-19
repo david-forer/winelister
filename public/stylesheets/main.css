@@ -13,7 +13,7 @@
 
   /* --- Welcome Page Styles --- */
   body {
-    background-color: lightblue;
+    background-color: rgb(153, 153, 153);
     color: #333;
     font-family: Sans-Serif;
     line-height: 18px;
@@ -49,6 +49,15 @@
 
   p {
     margin-bottom: 18px;
+  }
+
+  .nav {
+    list-style-type: none;
+    margin: 1em auto;
+    padding: 1em;
+    height: 2em;
+    overflow: hidden;
+    background-color: rgb(183, 183, 183);
   }
 
   .main {
