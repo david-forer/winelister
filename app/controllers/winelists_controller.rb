@@ -2,7 +2,7 @@ class WinelistsController < ApplicationController
 
 #get wine reviews/new to create form 
 get '/winelists/new' do
-    erb :'/winereviews/new'
+    erb :'/winelists/new'
 
 end
 #post request to create a review
