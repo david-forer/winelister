@@ -27,6 +27,10 @@ get '/winereviews/:id' do
     @winereview = Winereview.find(params[:id])
     erb :'/winereviews/show'
 end
+# route to edit wine reviews
+get '/winereviews/:id/edit' do
+    erb :'/winereviews/edit'
+  end
 
 #index route for all reviews
 
