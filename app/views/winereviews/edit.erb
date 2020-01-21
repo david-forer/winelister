@@ -1,1 +1,16 @@
 Edit your last review!
+<br>
+<br>
+
+<form class="" action="/winereviews/<%= @winereview.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <label for="wine_name">Wine Name:</label>
+  <input type="text" name="wine_name" value ="<%= @winereview.wine_name %>">
+  <label for="name">Wine Notes:</label>
+  <textarea name="wine_notes" style="width:auto; height:auto;"><%= @winereview.wine_notes %></textarea>
+  <%# <label for="name">Mood:</label>
+  <input type="text" name="mood">
+  <input type="text" name="sneaky_hacker_info"> %>
+
+  <input type="submit" name="" value="Edit Entry">
+</form>
