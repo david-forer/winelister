@@ -9,6 +9,11 @@ Wine review show page
 
 <a href="/winereviews/<%= @winereview.id %>/edit">edit entry</a>
 
-<a href="/winereviews/id/edit">delete entry</a>
+ <br><br>
+  <form class="" action="/winereviews/<%= @winereview.id %>" method="post">
+    <!-- How do I turn this form submission into a DELETE request??? -->
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" name="" value="Delete this Entry">
+  </form>
 
 <% end %>

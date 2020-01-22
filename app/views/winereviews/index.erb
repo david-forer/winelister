@@ -5,6 +5,6 @@
     <h4><strong><%= winereview.wine_name %></strong></h4>
     <p><%= winereview.wine_notes %></p>
     <h6><a href="/winereviews/<%= winereview.id %>"><%= winereview.created_at %></a></h6>
-    
+    <p>By <%= winereview.user_id %></p>
     <br><br>
 <% end %>

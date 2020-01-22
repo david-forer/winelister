@@ -57,6 +57,17 @@ class WinereviewsController < ApplicationController
         redirect "users/#{current_user.id}"
         end
     end
+
+    delete '/winereviews/:id' do
+        @winereview = Winereview.find(params[:id])
+        if authorized_to_edit?(@winereview)
+            @winereview.destroy
+            redirect '/winereviews'
+        else
+            redirect '/winereviews'
+        end
+
+    end
     #index route for all reviews
 
 #  figure out how to add to line 47 -> ,wine_name: params[:wine_name]
