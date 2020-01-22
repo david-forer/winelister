@@ -1,9 +1,14 @@
 Wine review show page
 <br>
+<br>
 <p><%= @winereview.wine_name %></p>
 <p><%= @winereview.wine_notes %></p>
 
 
+<%  if authorized_to_edit?(@winereview) %>
+
 <a href="/winereviews/<%= @winereview.id %>/edit">edit entry</a>
 
 <a href="/winereviews/id/edit">delete entry</a>
+
+<% end %>

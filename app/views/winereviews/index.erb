@@ -1,1 +1,10 @@
-this is index page for reviews
+<h2>Below are the most Recent Wine Reviews</h2>
+<br>
+<br>
+<% @winereviews.each do |winereview| %>
+    <h4><strong><%= winereview.wine_name %></strong></h4>
+    <p><%= winereview.wine_notes %></p>
+    <h6><a href="/winereviews/<%= winereview.id %>"><%= winereview.created_at %></a></h6>
+    
+    <br><br>
+<% end %>

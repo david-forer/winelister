@@ -1,5 +1,11 @@
 class WinereviewsController < ApplicationController
 
+    get '/winereviews' do
+        @winereviews = Winereview.all
+        erb :'winereviews/index'
+    end
+    
+    
     #get wine reviews/new to create form 
     get '/winereviews/new' do
         erb :'/winereviews/new'
