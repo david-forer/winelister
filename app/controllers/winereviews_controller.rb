@@ -19,9 +19,12 @@ class WinereviewsController < ApplicationController
         end  
 
         if params[:wine_notes] != ""
+            # flash[:message] = "[[The Review was Successfully created, Great Job!]]"
             @winereview = Winereview.create(wine_notes: params[:wine_notes], user_id: current_user.id, wine_name: params[:wine_name])
+            flash[:message] = "Your wine Review was successfully created." if @winereview.id
             redirect "/winereviews/#{@winereview.id}"
         else 
+            flash[:message] = "[[The Review didn't Work!! Boo, let's try again?!]]"
             redirect '/winereviews/new'
 
         end
@@ -62,6 +65,7 @@ class WinereviewsController < ApplicationController
         @winereview = Winereview.find(params[:id])
         if authorized_to_edit?(@winereview)
             @winereview.destroy
+            flash[:message] = "Successfully deleted that entry."
             redirect '/winereviews'
         else
             redirect '/winereviews'

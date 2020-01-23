@@ -12,10 +12,11 @@ class UsersController < ApplicationController
         if @user && @user.authenticate(params[:password])
             session[:user_id] = @user.id 
             puts session
+            flash[:message] = "Welcome Back!"
             redirect "users/#{@user.id}!"
-            binding.pry
+            
         else
-        
+            flash[:errors] = "Username or password is incorrect"
             redirect '/login'
             
         end
@@ -36,7 +37,7 @@ class UsersController < ApplicationController
 
         redirect "/users/#{@user.id}"
         else
-            #where direct user if not signed in
+            flash[:message] = "Fill out all fields. Email can't be taken."
             redirect '/signup'
         end
     end

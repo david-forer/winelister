@@ -1,19 +1,23 @@
-Wine review show page
-<br>
+<h2 = class"showpage"<h2>Wine Review </h2>
 <br>
 <p><%= @winereview.wine_name %></p>
 <p><%= @winereview.wine_notes %></p>
+<br>
+<button onclick="window.location.href = '/';">Go Back</button>
+<br>
+----------------------------------------------------------
+<br>
 
 
 <%  if authorized_to_edit?(@winereview) %>
 
-<a href="/winereviews/<%= @winereview.id %>/edit">edit entry</a>
-
- <br><br>
-  <form class="" action="/winereviews/<%= @winereview.id %>" method="post">
+<button onclick="window.location.href = '/winereviews/<%= @winereview.id %>/edit';">Edit this Entry</button>
+<br><br>
+  <form class="button" action="/winereviews/<%= @winereview.id %>" method="post">
     <!-- How do I turn this form submission into a DELETE request??? -->
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" name="" value="Delete this Entry">
   </form>
 
 <% end %>
+
