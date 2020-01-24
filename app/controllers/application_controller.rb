@@ -18,6 +18,15 @@ class ApplicationController < Sinatra::Base
     end
   end
 
+  get '/users/' do
+    # puts "Hello world"
+    # if logged_in?
+    #   redirect "/users/#{user.id}"
+    # else
+    #   erb :'users/index'
+    # end
+  end
+
   helpers do
 
     def logged_in? 
