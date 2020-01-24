@@ -1,0 +1,8 @@
+Current Users On WineLister
+<br>
+
+<% @users.each do |user| %>
+  <p><%= user.name %><br>
+    <a href=/users/#{user.id}"><%= user.name %>'s Page</a>
+  </p>
+<% end %>

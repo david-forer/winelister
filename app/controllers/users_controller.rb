@@ -34,7 +34,7 @@ class UsersController < ApplicationController
 
         @user = User.create(params) #create user
         session[:user_id] = @user.id #login new created user
-
+        flash[:message] = "You have successfully created an account, #{@user.name}! Welcome!"
         redirect "/users/#{@user.id}"
         else
             flash[:message] = "Fill out all fields. Email can't be taken."
@@ -55,6 +55,16 @@ class UsersController < ApplicationController
     get '/logout' do
         session.clear
         redirect '/'
+    end
+
+    get '/users' do
+        if logged_in?
+            @users = User.all
+            erb :'/users/index'
+        else
+            flash[:message] = "You must login to view users"
+            redirect '/login'
+        end
     end
 
 end

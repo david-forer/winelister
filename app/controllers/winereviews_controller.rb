@@ -72,6 +72,8 @@ class WinereviewsController < ApplicationController
         end
 
     end
+
+    
     #index route for all reviews
 
 #  figure out how to add to line 47 -> ,wine_name: params[:wine_name]
