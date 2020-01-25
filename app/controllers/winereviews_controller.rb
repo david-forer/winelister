@@ -8,19 +8,18 @@ class WinereviewsController < ApplicationController
     
     #get wine reviews/new to create form 
     get '/winereviews/new' do
+        redirect_if_not_logged_in
         erb :'/winereviews/new'
 
     end
     #post request to create a review
     post '/winereviews' do
         
-        if !logged_in?
-            redirect '/'
-        end  
+       redirect_if_not_logged_in
 
         if params[:wine_notes] != ""
-            # flash[:message] = "[[The Review was Successfully created, Great Job!]]"
-            @winereview = Winereview.create(wine_notes: params[:wine_notes], user_id: current_user.id, wine_name: params[:wine_name])
+           
+            @winereview = Winereview.create(wine_notes: params[:wine_notes], user_id: current_user.id, wine_name: params[:wine_name],wine_rating: params[:wine_rating])
             flash[:message] = "Your wine Review was successfully created." if @winereview.id
             redirect "/winereviews/#{@winereview.id}"
         else 

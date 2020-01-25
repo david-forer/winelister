@@ -1,0 +1,168 @@
+=> [[32m#<User:0x000056343a2b52b8[0m
+  id: [1;34m1[0m,
+  name: [31m[1;31m"[0m[31mDavid[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mdavid@microsoft.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$aQnXCuYUXOTIxbiy164V7uZrB8xf0jB4J2IWUIbItVSySJv3OgIV6[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m47[0m:[1;34m37[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m47[0m:[1;34m37[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2b46b0[0m
+  id: [1;34m2[0m,
+  name: [31m[1;31m"[0m[31mKalpana[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mkalpana@microsoft-type.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$h33HjN34y3j7PPO93FUOPeVOLpAbmnzpU4FoEKd9IvvuiX1iYeE16[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m47[0m:[1;34m38[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m47[0m:[1;34m38[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2b43b8[0m
+  id: [1;34m3[0m,
+  name: [31m[1;31m"[0m[31mEric[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31meric@landerss.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$gKpXowAqB4V00DCGJkY3IOppx7T533a7UADNlXdFCSyt7YIAshFYu[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m47[0m:[1;34m38[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m47[0m:[1;34m38[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2b4048[0m
+  id: [1;34m4[0m,
+  name: [31m[1;31m"[0m[31mDavid[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mdavid@microsoft.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$GsCyBEl/RUxj3kO80krMkOTJ7PE6wxut2QChQHddAgCEZL4Va4RWm[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m51[0m:[1;34m02[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m51[0m:[1;34m02[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2bbac8[0m
+  id: [1;34m5[0m,
+  name: [31m[1;31m"[0m[31mKalpana[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mkalpana@microsoft-type.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$uSbfnZ0rpT4cgQnynw1VEe4TrRAfL57GsgCrmvVRg7BscSqLT8uNC[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m51[0m:[1;34m02[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m51[0m:[1;34m02[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2bb140[0m
+  id: [1;34m6[0m,
+  name: [31m[1;31m"[0m[31mEric[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31meric@landerss.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$KjC/YIiXG2QITPzxT6lb2OOxllDbvupLeGaF2aA1fP6xu6dl9VX1y[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m51[0m:[1;34m02[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m51[0m:[1;34m02[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2ba498[0m
+  id: [1;34m7[0m,
+  name: [31m[1;31m"[0m[31mDavid[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mdavid@microsoft.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$hs.v1K7zPKFTiv9yKYbF9eN8eG0lK8jOLcY2UyqeZzIEKFIRtpYQq[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m52[0m:[1;34m04[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m52[0m:[1;34m04[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2b95c0[0m
+  id: [1;34m8[0m,
+  name: [31m[1;31m"[0m[31mKalpana[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mkalpana@microsoft-type.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$lSLT.MJ1guwcRx9IuqN46.nHTcBBGtYBXdUyIXQEHOxn1xMqcJwYG[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m52[0m:[1;34m04[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m52[0m:[1;34m04[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2b8f80[0m
+  id: [1;34m9[0m,
+  name: [31m[1;31m"[0m[31mEric[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31meric@landerss.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$X2fIRCn64DVRCWVBaWLLquTrsjpf/TH/wTEFM1ofEGuPpFwxe9oNq[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m52[0m:[1;34m05[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m12[0m:[1;34m52[0m:[1;34m05[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2b8490[0m
+  id: [1;34m10[0m,
+  name: [31m[1;31m"[0m[31mDavid[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mdavid@microsoft.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$q4T336Zveb4nVabCHy3ToeV3bqOurAZxBIRkycL6Eh3jwJBKKkDu2[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m13[0m:[1;34m00[0m:[1;34m41[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m13[0m:[1;34m00[0m:[1;34m41[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2bfd80[0m
+  id: [1;34m11[0m,
+  name: [31m[1;31m"[0m[31mKalpana[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mkalpana@microsoft-type.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$9YLt2X7qA03K.F/O8ExNquH8YHHo5My2UrriK8Q/YGKDeNmMSGiAC[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m13[0m:[1;34m00[0m:[1;34m41[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m13[0m:[1;34m00[0m:[1;34m41[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2bf6f0[0m
+  id: [1;34m12[0m,
+  name: [31m[1;31m"[0m[31mEric[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31meric@landerss.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$JzYX0eEnfsrT22CPoj/GpeUx.oxHjwZuMsYCdTjnrnELXHNHhd5hu[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m13[0m:[1;34m00[0m:[1;34m42[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m18[0m [1;34m13[0m:[1;34m00[0m:[1;34m42[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2be908[0m
+  id: [1;34m13[0m,
+  name: [31m[1;31m"[0m[31mRoger Forer[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mroger@rogaer.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$ITHFwU7G6dSAaWeCE5qsnOrUKlzwOcZG3bhnTO.jVpV3p/28p3BTS[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m19[0m [1;34m07[0m:[1;34m45[0m:[1;34m49[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m19[0m [1;34m07[0m:[1;34m45[0m:[1;34m49[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2bd260[0m
+  id: [1;34m14[0m,
+  name: [31m[1;31m"[0m[31mDante[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mdante@d.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$pjMx.JqDI2YWPGmdfpNXGu1yi/nSySSnmCPGQ.QJBFKgNGkaxJVIm[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m19[0m [1;34m08[0m:[1;34m09[0m:[1;34m23[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m19[0m [1;34m08[0m:[1;34m09[0m:[1;34m23[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2c3db8[0m
+  id: [1;34m15[0m,
+  name: [31m[1;31m"[0m[31mjohn[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mjohn@j.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$IQHKEgLv4COp3GzV0h83.Om08cG5zySZCQRuCH1LcQOBGm3G.6H/6[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m19[0m [1;34m08[0m:[1;34m25[0m:[1;34m35[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m19[0m [1;34m08[0m:[1;34m25[0m:[1;34m35[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2cf4b0[0m
+  id: [1;34m16[0m,
+  name: [31m[1;31m"[0m[31mjessica[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mjessica@j.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$te4PUyJMtF8fKfhTj0pZU.gdYXjZRWb2OOskIFtEhhAmtmwUw1Zni[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m19[0m [1;34m09[0m:[1;34m24[0m:[1;34m19[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m19[0m [1;34m09[0m:[1;34m24[0m:[1;34m19[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2cdfe8[0m
+  id: [1;34m17[0m,
+  name: [31m[1;31m"[0m[31mdave[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mdave@d.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$PuBb134yVdp2r2QZVZ4mP.Y.DcMBg.H/QrF.DNhv14T/n7Ang8mR2[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m20[0m [1;34m08[0m:[1;34m16[0m:[1;34m49[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m20[0m [1;34m08[0m:[1;34m16[0m:[1;34m49[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2cfa50[0m
+  id: [1;34m18[0m,
+  name: [31m[1;31m"[0m[31md4[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31md4@d4.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$SvkeLsNX1hjw6OJR6MPu1uiGMevT8/NLd5Pb5ih0PiHntVOpNfyGi[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m20[0m [1;34m14[0m:[1;34m08[0m:[1;34m04[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m20[0m [1;34m14[0m:[1;34m08[0m:[1;34m04[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2def50[0m
+  id: [1;34m19[0m,
+  name: [31m[1;31m"[0m[31mC[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mc@c.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$cOB9PdJstMGwd.n1MDlUYODBsnRzG1K27ETbrdC8x0Fx83.Afxd7y[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m22[0m [1;34m02[0m:[1;34m13[0m:[1;34m00[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m22[0m [1;34m02[0m:[1;34m13[0m:[1;34m00[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2dd768[0m
+  id: [1;34m20[0m,
+  name: [31m[1;31m"[0m[31mJohhny Appleseed[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mja@ja.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$TElc5BSisXYVnmQY/3f5tuRC/7owl74UMpyytAFISTvttzx/ApWSG[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m23[0m [1;34m09[0m:[1;34m12[0m:[1;34m53[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m23[0m [1;34m09[0m:[1;34m12[0m:[1;34m53[0m [1;34;4mUTC[0m[32m>[0m,
+ [32m#<User:0x000056343a2f3bd0[0m
+  id: [1;34m21[0m,
+  name: [31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mr@r.com[1;31m"[0m[31m[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$12$y/S9vK8jD7Slcwr.gvCjP.C80m6ELGkjf/ojoslRLiYSzB4pxj5Gu[1;31m"[0m[31m[0m,
+  created_at: [1;34m2020[0m-[1;34m01[0m-[1;34m23[0m [1;34m13[0m:[1;34m40[0m:[1;34m10[0m [1;34;4mUTC[0m,
+  updated_at: [1;34m2020[0m-[1;34m01[0m-[1;34m23[0m [1;34m13[0m:[1;34m40[0m:[1;34m10[0m [1;34;4mUTC[0m[32m>[0m]

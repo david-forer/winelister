@@ -43,12 +43,14 @@ class UsersController < ApplicationController
     end
 
     get '/users/:id' do
-
-        @user = User.find_by(id: params[:id])
-
-        #redirect_if_not_logged_in
-
-        erb :'/users/show'
+        if logged_in?
+            @user = User.find_by(id: params[:id])
+            
+            erb :'/users/show'
+            #redirect_if_not_logged_in
+        else
+            redirect '/login'
+        end
 
     end
 
@@ -60,6 +62,7 @@ class UsersController < ApplicationController
     get '/users' do
         if logged_in?
             @users = User.all
+         
             erb :'/users/index'
         else
             flash[:message] = "You must login to view users"

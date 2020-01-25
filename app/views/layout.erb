@@ -10,19 +10,24 @@
     <title>Winelister</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/stylesheets/main.css" />
   </head>
   <body>
-    <div class="nav">
-        <% if logged_in? %>
-          <a href="/logout">Logout</a>
-          <a href="/winereviews">Wine Reviews</a>
-          <a href="/winereviews/new">New Wine Review</a>
-          <a href="/wine_lists">Wine Lists</a>
-          <a href="/winelists/new">New Wine List</a>
-        <% end %>
-      </div>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/users" class="w3-bar-item w3-button w3-padding-large">Users</a>
+    <a href="/winereviews" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Wine Reviews</a>
+    <a href="/winereviews/new" class="w3-bar-item w3-button w3-padding-large w3-hide-small">New Wine Review</a>
+    <a href="/wine_lists" class="w3-bar-item w3-button w3-padding-large">Wine Lists</a>
+    <a href="winelists/new" class="w3-bar-item w3-button w3-padding-large">New Wine List</a>
+    <a href="/logout" class="w3-bar-item w3-button w3-padding-large">Logout</a>
+  </div>
+</div>
+
+
     <div class="wrapper">
     <% if flash[:message] %>
       <h4 style="color: blue;"><%= flash[:message] %><br><br></h4>

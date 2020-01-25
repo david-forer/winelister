@@ -1,10 +1,15 @@
+<link rel="stylesheet" href="/stylesheets/main.css" />
+
 <h2>Below are the most Recent Wine Reviews</h2>
 <br>
 <br>
+<div class="boxed-reviews">
 <% @winereviews.each do |winereview| %>
-    <h4><strong><%= winereview.wine_name %></strong></h4>
-    <p><%= winereview.wine_notes %></p>
-    <h6><a href="/winereviews/<%= winereview.id %>"><%= winereview.created_at %></a></h6>
+    <h4>Name: <strong><%= winereview.wine_name %></strong></h4>
+    <p><Strong>Notes:</strong> <%= winereview.wine_notes %></p>
+    <p><strong>Rating:</strong> <%= winereview.wine_rating %>/10</p>
+    <h6><strong>Rated at: </strong><a href="/winereviews/<%= winereview.id %>"><%= winereview.created_at %></a></h6>
     <p>By <%= winereview.user_id %></p>
-    <br><br>
+
 <% end %>
+</div>

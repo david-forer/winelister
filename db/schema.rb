@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200118074755) do
+ActiveRecord::Schema.define(version: 20200124093157) do
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
@@ -33,8 +33,9 @@ ActiveRecord::Schema.define(version: 20200118074755) do
     t.string   "wine_name"
     t.string   "wine_notes"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "wine_rating"
   end
 
 end
