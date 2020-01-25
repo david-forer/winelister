@@ -42,6 +42,7 @@ class WinereviewsController < ApplicationController
         if authorized_to_edit?(@winereview)
             erb :'/winereviews/edit'
         else 
+            flash[:message] = "You can't edit another user's wine review"
             redirect "users/#{current_user.id}"
         end   
     end
@@ -64,9 +65,10 @@ class WinereviewsController < ApplicationController
         @winereview = Winereview.find(params[:id])
         if authorized_to_edit?(@winereview)
             @winereview.destroy
-            flash[:message] = "Successfully deleted that entry."
+            flash[:message] = "Successfully deleted that wine review."
             redirect '/winereviews'
         else
+            flash[:message] = "You can't delete another user's wine review"
             redirect '/winereviews'
         end
 

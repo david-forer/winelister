@@ -6,10 +6,18 @@
 <h6>Email: </h6>
 <h4><%= @user.email %></h4>
 
-<h6>My Reviews: </h6>
+<% if !@user.winereviews.empty? %>
+  <h3>Wine Reviews</h3>
 
-
-
+  <ol>
+    <% @user.winereviews.each do |review| %>
+      <li>
+        Name:<%= review.wine_name %><br> Notes: <%= review.wine_notes %><br>
+        Rating: <%= review.wine_rating %>/10<br>
+      </li>
+    <% end %>
+  </ol>
+<% end %>
 
 <h6>My Lists: </h6>
 
