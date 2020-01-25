@@ -5,4 +5,5 @@ class Winereview < ActiveRecord::Base
     end
 
     belongs_to :user
+    has_many :users
 end

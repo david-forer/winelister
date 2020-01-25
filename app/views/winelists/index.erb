@@ -1,1 +1,12 @@
-winelists index page
+<h2>Best of wine Lists</h2>
+
+<% @winelists.each do |winelist| %>
+    <div class="boxed-reviews">
+     <h3><strong>Name: </strong><a href="/winelists/<%= winelist.id %>"><%= winelist.wine_name %></a></h3>
+   
+    <p><Strong>Description:</strong> <%= winelist.description %></p>
+    
+    <h6><strong>Created on: </strong><%= winelist.time_created_at %></a></h6>
+    <p>By <%= winelist.user_id %></p>
+    </div><br>
+<% end %>

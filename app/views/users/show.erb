@@ -6,20 +6,24 @@
 <h6>Email: </h6>
 <h4><%= @user.email %></h4>
 
+ <strong><h3>My Personal Wine Reviews</h3></strong>
 <% if !@user.winereviews.empty? %>
-  <h3>Wine Reviews</h3>
-
+ 
   <ol>
     <% @user.winereviews.each do |review| %>
       <li>
-        Name:<%= review.wine_name %><br> Notes: <%= review.wine_notes %><br>
-        Rating: <%= review.wine_rating %>/10<br>
+       <div class="boxed-reviews">
+        <strong>Name:</strong> <%= review.wine_name %><br> <strong>Notes:</strong> <%= review.wine_notes %><br>
+        <strong>Rating:</strong> <%= review.wine_rating %>/10<br>
+       </div> <br> <br>
       </li>
     <% end %>
   </ol>
 <% end %>
 
-<h6>My Lists: </h6>
+<h3>My Favorites: </h3>
 
-
-
+<% @user.winelists.each do |winelist| %>
+<strong>Name: </strong><a href="/winelists/<%= winelist.id %>"><%= winelist.wine_name %></a>
+<p><Strong>Description:</strong> <%= winelist.description %></p>
+<% end %>
