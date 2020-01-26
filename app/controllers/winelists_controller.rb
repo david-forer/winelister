@@ -31,9 +31,16 @@ class WinelistsController < ApplicationController
     #show page for wine list
     get '/winelists/:id' do
         @winelist = Winelist.find(params[:id])
-        erb :'/winelists/show'
-        # only_see_own_page
+        @user = User.find_by(id: session[:user_id])
 
+        if @winelist && @winelist.user == current_user
+        erb :'/winelists/show'
+        # only_see_own_page 
+        else
+            flash[:message] = "you can only view your own lists"
+            redirect '/winelists'
+            
+        end
        
         
     end
