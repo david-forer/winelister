@@ -3,6 +3,7 @@
 This is an app that is built with Sinatra. The app was designed for a user to be able to review wines they have bought and see reviews from other wine drinkers. Ultimately it should allow every user the ability to look up all their wines when at a store and buy one they really liked or add one to the collection..
 
 ## Getting Started
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Installation
