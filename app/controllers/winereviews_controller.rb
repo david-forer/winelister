@@ -19,8 +19,10 @@ class WinereviewsController < ApplicationController
        redirect_if_not_logged_in
 
         if params[:wine_notes] != ""
+
+            @winereview = current_user.winereviews.create(wine_notes: params[:wine_notes], wine_name: params[:wine_name], wine_rating: params[:wine_rating])
            
-            @winereview = Winereview.create(wine_notes: params[:wine_notes], user_id: current_user.id, wine_name: params[:wine_name],wine_rating: params[:wine_rating])
+            # @winereview = Winereview.create(wine_notes: params[:wine_notes], user_id: current_user.id, wine_name: params[:wine_name],wine_rating: params[:wine_rating])
             flash[:message] = "Your wine Review was successfully created." if @winereview.id
             redirect "/winereviews/#{@winereview.id}"
         else 
