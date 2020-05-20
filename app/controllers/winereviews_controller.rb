@@ -1,6 +1,7 @@
 class WinereviewsController < ApplicationController
 
     get '/winereviews' do
+        
         @winereviews = Winereview.all
         erb :'winereviews/index'
     end
@@ -23,7 +24,7 @@ class WinereviewsController < ApplicationController
             flash[:message] = "Your wine Review was successfully created." if @winereview.id
             redirect "/winereviews/#{@winereview.id}"
         else 
-            flash[:message] = "[[The Review didn't Work!! Boo, let's try again?!]]"
+            flash[:message] = "The Review didn't Work!! Boo, let's try again?!"
             redirect '/winereviews/new'
 
         end
@@ -49,10 +50,10 @@ class WinereviewsController < ApplicationController
 
     patch '/winereviews/:id' do
         redirect_if_not_logged_in
-        # 1. find the journal entry
+        # 1. find the review entry
         @winereview = Winereview.find(params[:id])
         if @winereview.user == current_user && params[:wine_notes] != ""
-        # 2. modify (update) the journal entry
+        # 2. modify (update) the review
         @winereview.update(wine_notes: params[:wine_notes])
         # 3. redirect to show page
         redirect "/winereviews/#{@winereview.id}"

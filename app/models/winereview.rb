@@ -4,6 +4,8 @@ class Winereview < ActiveRecord::Base
         self.created_at.strftime("%A, %d %b %Y %l:%M %p")
     end
 
+    
+
     belongs_to :user
     has_many :users
 end

@@ -65,8 +65,9 @@ class UsersController < ApplicationController
          
             erb :'/users/index'
         else
-            flash[:message] = "You must login to view users"
-            redirect '/login'
+            # flash[:message] = "You must login to view users"
+            # redirect '/login'
+            redirect_if_not_logged_in
         end
     end
 

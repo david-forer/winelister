@@ -1,1 +1,28 @@
-winelists show page
+<h2> <%= @winelist.wine_name %> </h2>
+
+<h4>Add a Wine Below:</h4>
+<form class="" action="/winelists/<% @id %>" method="post">
+  <label for="wine">The Wine's Name:</label>
+  <input type="text" name="winelists[name]" ><br><br>
+  <label for="wine_type">Wine Type:</label>
+  <input type="text" name="winelists[wine_type]" ><br><br>
+  <label for="year">Wine's Vintage Year:</label>
+  <input type="integer" name="winelists[year]" ><br><br>
+
+  <input type="submit" name="" value="Create Entry">
+</form>
+
+
+<h2>A list of wines :</h2>
+<%= @winelist.wine_name %><br>
+<%= @winelist.id %>
+
+
+
+
+
+
+
+
+
+ 

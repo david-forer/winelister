@@ -41,8 +41,13 @@ class ApplicationController < Sinatra::Base
       winereview.user == current_user
     end
 
+    # def also_authorized_to_edit?(winelist)
+    #   winelist.user == current_user
+    # end
+
     def redirect_if_not_logged_in
       if !logged_in?
+        flash[:message] = "You must login to view this page"
         # flash[:errors] = "You must be logged in to view the page you tried to view."
         redirect '/'
       end

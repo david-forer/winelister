@@ -1,4 +1,4 @@
-<h2>Best of Wine Lists</h2>
+<h2>Your Best of the Best Wines</h2>
 
 <% @winelists.each do |winelist| %>
     <div class="boxed-reviews">
@@ -7,6 +7,6 @@
     <p><Strong>Description:</strong> <%= winelist.description %></p>
     
     <h6><strong>Created on: </strong><%= winelist.time_created_at %></a></h6>
-    <p>By <%= winelist.user_id %></p>
+   
     </div><br>
 <% end %>

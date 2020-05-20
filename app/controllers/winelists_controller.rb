@@ -3,7 +3,9 @@ class WinelistsController < ApplicationController
     #index route for all lists
     get '/winelists' do
         redirect_if_not_logged_in
-            @winelists = Winelist.all
+        
+            @winelists = Winelist.all.where(user_id: current_user.id)
+            
             erb :'winelists/index'
         
     end
@@ -21,13 +23,14 @@ class WinelistsController < ApplicationController
         if params[:description] != ""
 
             @winelist = Winelist.create(wine_name: params[:wine_name], user_id: current_user.id, description: params[:description])
-            flash[:message] = "Your wine list was created" if @winelist.id
+            flash[:message] = "Your wine list was created" 
             redirect "winelists/#{@winelist.id}"
         else
             flash[:message] = "The wine list was not created. Please try again!"
             redirect '/winelists/new'
         end
     end
+    
     #show page for wine list
     get '/winelists/:id' do
         @winelist = Winelist.find(params[:id])
@@ -44,6 +47,24 @@ class WinelistsController < ApplicationController
        
         
     end
+
+    post '/winelists/:id' do
+        redirect_if_not_logged_in
+
+        if params[:wine] != ""
+
+            @winelist_btm = Winelist.create(wine: params[:wine], wine_type: params[:wine_type], year: params[:year], id: params[:id])
+            flash[:message] = "Your wine was added to the list" if @winelist_btm.id
+            redirect "winelists/#{@id}"
+        else
+            flash[:message] = "Your wine was not created. Please try again!"
+            redirect '/winelists/new'
+        end
+    end
+
+#     get '/winelists/:id/wines' do
+#     "Hello World"
+#   end
 
 
     private

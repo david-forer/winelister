@@ -11,7 +11,7 @@
     <p><Strong>Notes:</strong> <%= winereview.wine_notes %></p>
     <p><strong>Rating:</strong> <%= winereview.wine_rating %>/10</p>
     <h6><strong>Rated on: </strong><%= winereview.time_created_at %></a></h6>
-    <p>By <%= winereview.user_id %></p>
+    <p><strong>By:</strong> <%= winereview.user.name %></p>
     </div><br>
 <% end %>
 
